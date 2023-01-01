@@ -61,4 +61,4 @@ Q11. What is the 'dist' folder?
 'dist' folder conatains set of files which is compact version of actualy code files. This get generated during npx command.
 
 Q12. What is 'browserlists'?
-'broswerlists' is the option in package.json which is used to provide information which older version broswer should support out app.
+'browserlists' is the option in package.json which is used to provide information which older version broswer should support out app.
