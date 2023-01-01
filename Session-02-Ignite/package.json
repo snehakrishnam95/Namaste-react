@@ -1,12 +1,12 @@
 {
-  "name": "session-02-ignite",
+  "name": "namaste-react-live",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "description": "This is live course",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "parcel index.html",
+    "build":"parcel build index.html"
   },
-  "keywords": [],
   "author": "",
   "license": "ISC",
   "devDependencies": {

@@ -24,44 +24,37 @@
 
 import React from "react";
 import ReactDOM from "react-dom/client";
-// React.createElement => obj => html(dom)
+
 const heading = React.createElement(
   "h1",
   {
     id: "title",
   },
   "Heading 1 for parcel"
-); // react element
+);
 
+const heading2 = React.createElement(
+  "h2",
+  {
+    id: "title",
+  },
+  "Heading 2"
+);
 
+const container = React.createElement(
+  "div",
+  {
+    id: "container",
+    hello: "world",
+  },
+  [heading, heading2]
+);
 
+console.log(heading);
 
-
-
-// new way JSX---------------
-//JSX => React.createElement => obj => html(DOM)
-const heading2 = (
-  <h2 id="title" key='h2'>Namaste react</h2>
-); // jsx syntax
-
-
-const Title = () =>(
-  <h2 id="title1" key='h11'> Title</h2>
-); // jsx syntax
-//component composition --> nested compoenents
-const HeadingElement =() =>{
-  return(
-    <div>
-      {heading2}
-
-      {Title()}
-  <Title />
-      <h1>Namaste funcional component</h1>
-      <h2>This is h2 tag</h2>
-    </div>
-  );
-}
 const root = ReactDOM.createRoot(document.getElementById("root"));
 
-// root.render(heading2);
-root.render(<HeadingElement />);
+//passing a react element inside the root
+
+//async defer
+root.render(container);
